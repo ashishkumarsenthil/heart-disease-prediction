@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Text with Home Button</title>
+    <style>
+        body {
+            /* font-family: Arial, sans-serif;
+            background-color: #1c2942;
+            color: #E0E0E0; */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #121015; /* Base background color */
+            background-image: radial-gradient(circle, #ff6b6b 1px, transparent 1px);
+            background-size: 20px 20px; /* Adjust spacing between dots */
+            background-position: center; /* Center alignment of the dots */
+            padding: 20px; /* Padding to show the effect */
+            border-radius: 10px; /* Optional rounded corners */
+            color: #E0E0E0; /* Text color for contrast */
+        }
+
+        .container {
+            text-align: center;
+            background-color: #1A1F2C;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #2D3748;
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #E0E0E0;
+        }
+        .disclaimer {
+            background-color: #000000; /* Softer dark background for better contrast */
+            padding: 15px; /* Added padding for better spacing */
+            border-radius: 12px; /* Smooth rounded corners */
+            margin-top: 25px; /* Maintain vertical spacing */
+            font-size: 16px; /* Slightly larger and more readable font size */
+            line-height: 1.6; /* Improved line spacing for readability */
+            color: #FF4C4C; /* Brighter and warm red for visibility */
+            border: 1px solid #6B7280; /* Subtle border for a polished look */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add a soft shadow for a modern lift */
+            transition: all 0.3s ease; /* Smooth transitions for hover effects */
+        }
+        
+        /* Hover effect for better interactivity */
+        .disclaimer:hover {
+            background-color: #292635; /* Slightly lighter background on hover */
+            color: #3d0606; /* Brighter text color for hover state */
+            border-color: #372776; /* Enhance border visibility on hover */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+            transform: translateY(-3px); /* Subtle lift effect */
+        }
+        
+        /* Optional: Align text to center for disclaimers */
+        .disclaimer p {
+            text-align: center; /* Center-align text */
+            margin: 0; /* Reset default margins */
+        }
+        
+        /* Add emphasis for bold warnings */
+        .disclaimer strong {
+            text-align: center;
+            color: #FF6B6B; /* Highlight strong text in a brighter shade */
+            font-weight: 600; /* Make bold text slightly more prominent */
+        }
+
+        .container p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            color: #A0AEC0;
+        }
+        .gg1{
+            color: rgb(242, 246, 242);
+            transition: all 0.3s ease;
+        }
+        .gg1:hover{
+            color: #b73131;
+            transform: translateY(-2px);
+            
+        }
+        .home-button {
+            text-decoration: none;
+            background: linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1em;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .home-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 25px rgba(30, 64, 175, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="gg1">{{gg1}}</h1>
+        <h2 class="gg1">{{gg2}}</h2>
+        <p class="gg1">{{pred}}</p>
+        <a href="/" class="home-button">Go Back to Home</a>
+        <div class="disclaimer">
+            <p style="color:red"><strong>MEDICAL DISCLAIMER:</strong><br>
+            This tool provides an estimated risk assessment based on machine learning predictions.<br>
+            It should not be used as a substitute for professional medical advice, diagnosis, or treatment.<br>
+            Always seek the advice of your physician or other qualified health provider.</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
